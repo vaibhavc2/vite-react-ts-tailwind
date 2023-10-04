@@ -1,16 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import PageNotFound from "./pages/PageNotFound";
+import Router from "./router/Router";
+import { darkModePreference } from "./scripts/darkModePreference";
 
 function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="*" element={<PageNotFound />} />
-      </Routes>
-    </Router>
-  );
+  darkModePreference();
+  return <Router />;
 }
 
 export default App;
