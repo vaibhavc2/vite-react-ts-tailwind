@@ -1,18 +1,5 @@
-import { Fragment } from "react";
-import Navbar from "../../components/header/Navbar";
-import useDarkMode from "../../hooks/useDarkMode";
-
 const Home = () => {
-  const [darkMode, toggleDarkMode] = useDarkMode();
-
-  return (
-    <Fragment>
-      <Navbar
-        darkMode={darkMode as boolean}
-        toggleDarkMode={toggleDarkMode as () => void}
-      />
-    </Fragment>
-  );
+  return <div className="m-10 text-center">HOME Page</div>;
 };
 
 export default Home;

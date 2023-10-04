@@ -1,15 +1,23 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements
+} from "react-router-dom";
+
 import { Home, PageNotFound } from "./pages";
+import Layout from "../app/Layout";
+import Login from "./pages/Login";
 
-const Router = () => {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="*" element={<PageNotFound />} />
-      </Routes>
-    </BrowserRouter>
-  );
-};
-
-export default Router;
+export const router = createBrowserRouter(
+  createRoutesFromElements(
+    <>
+      <Route path="/" element={<Layout />}>
+        {/* nested routes */}
+        <Route path="" element={<Home />} />
+        <Route path="login" element={<Login />} />
+        {/* Other Routes to be configured here */}
+      </Route>
+      <Route path="*" element={<PageNotFound />} />
+    </>
+  )
+);
