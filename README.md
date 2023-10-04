@@ -5,7 +5,8 @@ This is a template repository to create a project using Vite, React, Typescript,
 Get started:
 
 ```console
-git clone https://github.com/vaibhavc2/vite-react-ts-tailwind.git
+gh repo create my-app --template= https://github.com/vaibhavc2/vite-react-ts-tailwind.git
+cd my-app
 npm i
 npm run dev
 ```
