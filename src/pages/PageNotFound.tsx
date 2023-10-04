@@ -1,5 +1,5 @@
 const PageNotFound = () => {
-  return <div>Page Not Found! Error: 404</div>;
+  return <div className="dark:text-gray-100">Page Not Found! Error: 404</div>;
 };
 
 export default PageNotFound;
