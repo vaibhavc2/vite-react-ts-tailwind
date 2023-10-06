@@ -16,7 +16,7 @@ const Layout = () => {
       <Outlet />
 
       <Footer className="text-center" />
-    <div/>
+    </div>
   );
 };
 

@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 
 import { Home, PageNotFound } from "./pages";
-import Layout from "../app/Layout";
+import Layout from "../Layout";
 import Login from "./pages/Login";
 
 export const router = createBrowserRouter(
