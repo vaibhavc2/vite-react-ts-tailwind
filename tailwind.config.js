@@ -8,8 +8,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Roboto", ...defaultTheme.fontFamily.sans],
-        serif: ["Rubik", ...defaultTheme.fontFamily.serif],
+        sans: ["Rubik", ...defaultTheme.fontFamily.sans],
+        serif: ["Roboto", ...defaultTheme.fontFamily.serif],
         mono: ["Roboto Mono", ...defaultTheme.fontFamily.mono]
       }
     }
