@@ -6,7 +6,7 @@ import useDarkMode from "../hooks/useDarkMode";
 const Layout = () => {
   const [darkMode, toggleDarkMode] = useDarkMode();
   return (
-    <>
+    <div className="flex h-screen flex-col justify-between">
       <Header
         darkMode={darkMode as boolean}
         toggleDarkMode={toggleDarkMode as () => void}
@@ -16,7 +16,7 @@ const Layout = () => {
       <Outlet />
 
       <Footer className="text-center" />
-    </>
+    <div/>
   );
 };
 
